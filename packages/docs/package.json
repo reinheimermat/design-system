@@ -3,16 +3,19 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "storybook dev -p 6006",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "@ignite-ui/eslint-config": "*",
+    "@ignite-ui/tokens": "*",
+    "@ignite-ui/ts-config": "*",
+    "@ignite-ui/react": "*"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
