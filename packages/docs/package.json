@@ -13,13 +13,14 @@
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "@ignite-ui/ts-config": "*",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
     "@chromatic-com/storybook": "^1.6.1",
+    "@ignite-ui/eslint-config": "*",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-interactions": "^8.2.9",
     "@storybook/addon-links": "^8.2.9",
