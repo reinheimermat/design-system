@@ -1,10 +1,16 @@
 {
+  "name": "monorepo",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "packageManager": "npm@10.8.2",
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
-    "eslint": "^8.57.0"
+    "eslint": "^8.57.0",
+    "turbo": "^2.0.14"
   }
 }
