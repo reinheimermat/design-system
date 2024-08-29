@@ -9,6 +9,9 @@ export default {
   args: {
     children: 'Send',
   },
+  argTypes: {
+    onclick: { action: 'click' },
+  },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
