@@ -1,6 +1,7 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 
 import { join, dirname } from "path";
+import { InlineConfig } from "vite";
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -22,5 +23,11 @@ const config: StorybookConfig = {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
+  viteFinal: (config, { configType }): InlineConfig | Promise<InlineConfig> => {
+    if (configType === "PRODUCTION") {
+      config.base = '/design-system/';
+    }
+    return config;
+  }
 };
 export default config;
