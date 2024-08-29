@@ -13,7 +13,7 @@ export const Primary: StoryObj<HeadingProps> = {}
 
 export const CustomTag: StoryObj<HeadingProps> = {
   args: {
-    Children: 'H1 Heading',
+    children: 'H1 Heading',
     as: 'h1',
   },
   parameters: {
